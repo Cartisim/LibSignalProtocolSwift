@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Curve25519
+import CCurve25519
 @testable import SignalProtocol
 
 // The result from forming an agreement between alice and bob

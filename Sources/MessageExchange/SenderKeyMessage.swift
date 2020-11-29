@@ -9,6 +9,7 @@
 import Foundation
 import Curve25519
 
+
 /**
  A sender key message is used to send an encrypted message in an existing group session.
  */
