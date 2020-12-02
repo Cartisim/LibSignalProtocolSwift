@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "LibSignalProtocolSwift",
+    name: "SignalProtocol",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_10),
@@ -26,13 +26,13 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "LibSignalProtocolSwift",
+            name: "SignalProtocol",
             dependencies: ["SwiftProtobuf", "Curve25519"],
             path: "Sources"),
 
         .testTarget(
-            name: "LibSignalProtocolSwiftTests",
-            dependencies: ["LibSignalProtocolSwift"],
+            name: "SignalProtocolTests",
+            dependencies: ["SignalProtocol"],
             path: "Tests"),
     ]
 )
